@@ -38,3 +38,29 @@ INSERT INTO musicasFavoritas (musica, artista, idioma, duracaoMin) VALUES
 -- Mostrar os dados inseridos
 SELECT * FROM musicasFavoritas;
 ```
+
+### Para listar as músicas em ordem alfabética, executamos o código:
+```sql
+-- Ordem crescente
+SELECT * 
+FROM musicasFavoritas 
+ORDER BY musica;
+
+-- Ordem decrescente
+SELECT * 
+FROM musicasFavoritas 
+ORDER BY musica DESC;
+```
+
+### Para listar as músicas de acordo com a duração, executamos o código:
+```sql
+-- Ordem crescente
+SELECT * 
+FROM musicasFavoritas 
+ORDER BY duracaomin;
+
+-- Ordem decrescente
+SELECT * 
+FROM musicasFavoritas 
+ORDER BY duracaomin DESC;
+```
